@@ -5,6 +5,8 @@ The other folders contain R, LaTeX, PDF files that are used in the main text, an
 Github's PDF reader does not allow you to read hyperlinks, so you need to download the pdf to see them
 
 I should leave the introduction of the project here, to make it easier to understand:
+
+
  Thelinear regression analysis is based on the book I used, Econometric Meth
 ods by Jack Johnston, and the class notes from Econometrics 1 (and possibly
  2) that I took at FEA-USP.
