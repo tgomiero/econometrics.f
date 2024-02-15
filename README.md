@@ -7,8 +7,8 @@ Github's PDF reader does not allow you to read hyperlinks, so you need to downlo
 I should leave the introduction of the project here, to make it easier to understand:
 
 
- The econometric analysis is based on the book I used, Econometric Meth
-ods by Jack Johnston, and the class notes from Econometrics 1 (and possibly
+ The econometric analysis is based on the book I used, Econometric Methods
+ by Jack Johnston, and the class notes from Econometrics 1 (and possibly
  2) that I took at FEA-USP.
  Several excerpts have been rewritten based on the main book with the aim
  of developing my writing skills in R and LaTeX. Similarly, the tables in the book have
