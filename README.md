@@ -19,7 +19,7 @@ ods by Jack Johnston, and the class notes from Econometrics 1 (and possibly
  I will try to use some techniques and concepts presented in Quantitative
  Economics with R; A Data Science Approachlink. Its PDF can be easily found
  by searching online.
- The main objective here will not be to present a formal approach to econo
-metrics. Instead, I will aim to provide a concise overview of the theory necessary
+ The main objective here will not be to present a formal approach to econometrics. 
+ Instead, I will aim to provide a concise overview of the theory necessary
  to understand the topic, and proceed with practical examples using R, Excel,
- and other tools
+ and other tools.
