@@ -14,11 +14,15 @@ I should leave the introduction of the project here, to make it easier to unders
  of developing my writing skills in R and LaTeX. Similarly, the tables in the book have
  been rewritten and/or adapted in LaTeX or using Rstudio to further develop
  my skills in these environments.
+
+ 
  Most of the statistical calculations were carried out in Rstudio with the same
  objective. Excel was also used to clean the database and integrate with Rstudio.
  I will try to use some techniques and concepts presented in Quantitative
  Economics with R; A Data Science Approachlink. Its PDF can be easily found
  by searching online.
+
+ 
  The main objective here will not be to present a formal approach to econometrics. 
  Instead, I will aim to provide a concise overview of the theory necessary
  to understand the topic, and proceed with practical examples using R, Excel,
