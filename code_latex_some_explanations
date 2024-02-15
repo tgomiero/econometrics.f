@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc} % Suporte para UTF-8
+\usepackage{spverbatim} % Para incluir código com quebras de linha
+\usepackage{verbatimbox}
+\usepackage{graphicx} % Para incluir imagens
+\usepackage{float} % Para manter a imagem fixa e texto após ela (driblar a otimização do latex) [H]
+\usepackage{caption} % Para adicionar legendas fora do ambiente figure
+\title{Coding the main tex (Rstudio, Excel - in progress)} % Define o título do documento
+\author{Thiago  Vinicius Gomiero} % Define o autor do documento
+\date{February 2024} % Define a data que aparece no documento
+
+\begin{document}
+
+\maketitle % Este comando cria o título do documento, autor e data previamente definidos
+\section{Explanation of the codes used in LaTeX}
+\subsection{Latex table}
+\begin{table}[H]
+\centering
+\caption*{TABLE : A bivariate probability distribution}
+\begin{tabular}{c|c|c|c|c}
+ & \(X_1\) & \(\ldots\) & \(X_i\) & Marginal probability \\
+\hline
+\(Y_1\) & \(p_{11}\) & \(\ldots\) & \(p_{i1}\) & \(p_{.1}\) \\
+\(\vdots\) & \(\vdots\) & \(\ddots\) & \(\vdots\) & \(\vdots\) \\
+\(Y_j\) & \(p_{1j}\) & \(\ldots\) & \(p_{ij}\) & \(P_.j\) \\
+\(\vdots\) & \(\vdots\) & \(\ddots\) & \(\vdots\) & \(\vdots\) \\
+\(Y_p\) & \(p_{1p}\) & \(\ldots\) & \(p_{ip}\) & \(P_.p\) \\
+\hline
+Marginal probability & \(p_{1.}\) & \(\ldots\) & \(p_{i.}\) & 1
+\end{tabular}
+\end{table}
+\subsubsection{LaTeX code}
+\begin{spverbatim}
+\maketitle % Este comando cria o título do documento, autor e data previamente definidos
+\section{Explanation of the codes used in LaTeX}
+\subsection{Latex table}
+\begin{table}[H]
+\centering
+\caption*{TABLE : A bivariate probability distribution}
+\begin{tabular}{c|c|c|c|c}
+ & \(X_1\) & \(\ldots\) & \(X_i\) & Marginal probability \\
+\hline
+\(Y_1\) & \(p_{11}\) & \(\ldots\) & \(p_{i1}\) & \(p_{.1}\) \\
+\(\vdots\) & \(\vdots\) & \(\ddots\) & \(\vdots\) & \(\vdots\) \\
+\(Y_j\) & \(p_{1j}\) & \(\ldots\) & \(p_{ij}\) & \(P_.j\) \\
+\(\vdots\) & \(\vdots\) & \(\ddots\) & \(\vdots\) & \(\vdots\) \\
+\(Y_p\) & \(p_{1p}\) & \(\ldots\) & \(p_{ip}\) & \(P_.p\) \\
+\hline
+Marginal probability & \(p_{1.}\) & \(\ldots\) & \(p_{i.}\) & 1
+\end{tabular}
+\end{table}
+\end{spverbatim}
+\subsubsection{Explanation}
+
+\begin{spverbatim}
+\begin{table}[H] and \end{table}: These commands delimit the beginning and end of the table. [H] is a positioning specification that means “here”, that is, LaTeX will try to place the table exactly at this point in the document.
+\centering: This command centers the table on the page.
+\caption*{TABLE : A bivariate probability distribution}: This command adds a caption to the table. The asterisk after the \caption command means that the caption will not be numbered.
+\begin{tabular}{c|c|c|c|c} and \end{tabular}: These commands delimit the beginning and end of the tabular environment, which is where the table data is inserted. The letters c indicate that the columns must be centered and the character | adds a vertical line between columns.
+& : This is the column delimiter. It separates the entries into different columns.
+\\ : This command indicates the end of a line.
+\hline : This command inserts a horizontal line.
+\(\ldots\) , \(\vdots\) , \(\ddots\) : These commands insert different types of suspension points.
+\(X_1\), \(X_i\), \(Y_1\), \(Y_j\), \(Y_p\), \(p_{11}\), \(p_{i1}\), \( p_{1j}\), \(p_{ij}\), \(p_{1p}\), \(p_{ip}\), \(p_{.1}\), \(P_.j\ ), \(P_.p\), \(p_{1.}\), \(p_{i.}\): These are mathematical expressions in LaTeX. They represent the variables and probabilities in the distribution.
+
+
+\end{spverbatim}
+
+\end{document}
