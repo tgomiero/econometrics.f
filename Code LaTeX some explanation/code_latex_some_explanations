@@ -5,7 +5,7 @@
 \usepackage{graphicx} % Para incluir imagens
 \usepackage{float} % Para manter a imagem fixa e texto após ela (driblar a otimização do latex) [H]
 \usepackage{caption} % Para adicionar legendas fora do ambiente figure
-\title{Coding the main tex (Rstudio, Excel - in progress)} % Define o título do documento
+\title{Coding the main tex (LaTeX - in progress)} % Define o título do documento
 \author{Thiago  Vinicius Gomiero} % Define o autor do documento
 \date{February 2024} % Define a data que aparece no documento
 
