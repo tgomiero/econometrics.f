@@ -162,6 +162,87 @@ The main objective here will not be to present a formal approach to econometrics
 \subsection{The k-variable model}
 For this part, I am going to use class notes and \href{https://www.statlect.com/fundamentals-of-statistics/linear-regression}{statlect by Marcos Taboga}. 
 
+\(y_i = B_1x_{i1}+B_2x_{i2}...+B_kx_{ik}+\varepsilon_i\), 
+
+\(  x_{1i}=1\) \(\forall{i}\)\
+
+Using matrix notation:
+
+
+\(B_{K \times 1} = \begin{bmatrix} B_1 \\ B_2 \\ \vdots \\ B_k \end{bmatrix}\),  \(x_{i}=\begin{bmatrix} x_{i1}\\x_{i2}\\ \vdots \\ x_{ik} \end{bmatrix}\) \(\rightarrow\) \(y_i=x_i\textquotesingle B+ \varepsilon_i\), \(i=1,2...n\)
+
+
+In this form, \(y_i\) represents a scalar output variable, called dependent variable or regressand.
+
+
+\(x_i\textquotesingle\) is a kx1 vector of input variables, called independent variables or regressors.
+
+N is the sample size.
+
+B is a kx1 vector of constants, called regression coefficients.
+
+\(\varepsilon_i\) is an unobservable error term.This includes the sources of variability in \(y_i\) that are not accounted for in the input vector \(x_i\),such as measurement errors and input variables that are not observed by the statistician.
+
+\subsubsection{Example:}
+Suppose there is a sample of countries for which GDP, life expectancy, and crime rates are observed. We aim to establish a linear regression model to predict GDP based on life expectancy and crime rates.
+\(g_i = B_1 + B_2l_i + B_3c_i + \varepsilon_i \)
+
+
+\(g_i, l_i, c_i\) denote GDP, life expectancy and crime rates.
+
+
+\(B_1, B_2, B_3\) are regression coefficients.
+
+
+\(\varepsilon_i\) is an error term.
+
+The equation can be written in a vector notation as:
+
+\[y_i = x_i\textquotesingle B + \varepsilon_i\]
+
+by defining
+
+
+\[y_i = g_i\]
+
+\[x_i = \begin{bmatrix} 1 \\ l_i\\ c_i \end{bmatrix}\]
+
+\[B = \begin{bmatrix} B_1\\B_2\\B_3\end{bmatrix}\]
+
+\subsubsection{Matrix Notation}
+
+
+Denote \(y\) by the Nx1 vector of outputs 
+\[y= \begin{bmatrix} y_1\\y_2\\ \vdots\\y_N\end{bmatrix}\]
+
+\(X\) by the NxK matrix of inputs
+
+\[X = \begin{bmatrix} x_1\textquotesingle\\x_2\textquotesingle\\\vdots\\x_N\textquotesingle\end{bmatrix}\]
+
+and \(\varepsilon\), the Nx1 error terms by:
+
+\[\varepsilon = \begin{bmatrix} \varepsilon_1\\\varepsilon_2\\\vdots\\\varepsilon_N\end{bmatrix}\]
+
+we have, then:
+\[y_{Nx1} = X_{NxK}B_{Kx1} + \varepsilon_{Nx1}\]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
