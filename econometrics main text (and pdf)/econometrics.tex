@@ -229,6 +229,29 @@ we have, then:
 \[y_{Nx1} = X_{NxK}B_{Kx1} + \varepsilon_{Nx1}\]
 
 \subsubsection{Design Matrix}
+Definition: A design matrix contains information/data about multiple characteristics of many objects of interest. 
+Each row corresponds to an individual and each column to a characteristic.
+
+In the context of Linear Regression, it is often represented by the \(X\).
+
+Example: Consider the linear regression \(y_i = x_i\textquotesingle B + \varepsilon_i\), where \(y_i\) is the dependent variable, \(x_i\textquotesingle\) is a Kx1 vector containing the K explanatory variables, \(B\) is a Kx1 vector of regression coefficients, \(\varepsilon_i\) is the error term and there are N observations
+
+All the observations can be collected in the design matrix:
+
+
+\[X = \begin{bmatrix} x_1\textquotesingle\\x_2\textquotesingle\\\vdots\\x_N\textquotesingle\end{bmatrix} = \begin{bmatrix}
+1 & x_{12} & \cdots & x_{1k} \\
+1 & x_{22} & \cdots & x_{2k} \\
+\vdots & & & \vdots \\
+1 & x_{N2} & \cdots & x_{Nk}
+\end{bmatrix}\]
+
+where it sets the first column, \(x_{i1} = 1\), because in the matrix form \(Y = XB + \varepsilon\), this 1 in each row for each individual forms the intercept of the regression line.
+
+\subsubsection{Initiating a practical example using R}
+
+
+
 
 
 
