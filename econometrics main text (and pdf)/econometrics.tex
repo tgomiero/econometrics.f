@@ -9,6 +9,9 @@
 \captionsetup[table]{justification=centering} % center table captions
 \usepackage{hyperref} %  Package for adding hyperlinks within the document
 \usepackage{float} % To keep the image fixed and text after it (bypass latex optimization) [H]
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{tabularx} 
 
 \title{Econometrics - Revisiting and developing (in progress)} % Set the document title
 \author{Thiago  Vinicius Gomiero} % Define the document author
@@ -250,36 +253,19 @@ where it sets the first column, \(x_{i1} = 1\), because in the matrix form \(Y =
 
 \subsubsection{Initiating a practical example using R}
 Not considering the context of biased estimator and similar concepts, we can begin the visualization of the regression I mentioned earlier:
-Suppose there is a sample of countries for which GDP, life expectancy, and crime rates are observed. We aim to establish a linear regression model to predict GDP based on life expectancy and crime rates.
+Suppose there is a sample of countries for which GDP per capita, life expectancy, and crime rates are observed. We aim to establish a linear regression model to predict GDP based on life expectancy and crime rates.
 \(g_i = B_1 + B_2l_i + B_3c_i + \varepsilon_i \), which is equivalent to \(y_i = x_i\textquotesingle B + \varepsilon_i\) and \(Y = XB + \varepsilon\)
 
 
+Database: For the crime rate, the variable \href{https://ourworldindata.org/grapher/homicide-rate-unodc}{"homicide rate"} is set, while for GDP and life expectancy, it´s possible to use this data separately, \href{https://ourworldindata.org/grapher/life-expectancy-vs-gdp-per-capita}{here}.
 
 
+All variables are available for many years, from 1990 to 2010, for example. For simplification, I will choose one year that contains the largest number of countries for which we have data for all variables.
 
 
+Did that, this is the available data, as follows, to perform the regression.  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\input{tablesfolder/common_data_2010.tex}
 
 
 \end{document}
-
